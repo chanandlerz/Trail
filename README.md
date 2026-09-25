@@ -1,4 +1,4 @@
-# Trail - Real-Time Pedestrian Safety Companion
+# Trail : Real-Time Pedestrian Safety Companion
 
 An app that makes walking journeys feel safer by keeping walkers connected with their companions. Built for iOS and watchOS using Swift, SwiftUI, and The Composable Architecture (TCA).
 
@@ -40,33 +40,33 @@ Sign in with Apple -> Set your Default Destination -> Add your Trusted Person ->
 ## Core Personas and Features
 
 ### 1. The Walker (Pedestrian)
-* Start a Walk with Zero Friction: Search for an address, select from saved places (such as "Home" or "Office"), or trigger the walk hands-free using Siri ("Hey Siri, start walking home").
-* Pedestrian Route Guidance: Computes pedestrian routes via MapKit with real-time waypoint progression, remaining distance, and ETA calculations.
-* Glanceable Updates: Uses ActivityKit (Dynamic Island and Lock Screen Live Activities) and an Apple Watch companion app (via WatchConnectivity) so the walker stays aware of their surroundings without staring at their screen.
-* Telemetry Streaming: Runs background GPS updates through CoreLocation, broadcasting live coordinates, battery level, and route progress to CloudKit.
+* **Start a Walk with Zero Friction**: Search for an address, select from saved places (such as "Home" or "Office"), or trigger the walk hands-free using Siri ("Hey Siri, start walking home").
+* **Pedestrian Route Guidance**: Computes pedestrian routes via MapKit with real-time waypoint progression, remaining distance, and ETA calculations.
+* **Glanceable Updates**: Uses ActivityKit (Dynamic Island and Lock Screen Live Activities) and an Apple Watch companion app (via WatchConnectivity) so the walker stays aware of their surroundings without staring at their screen.
+* **Telemetry Streaming**: Runs background GPS updates through CoreLocation, broadcasting live coordinates, battery level, and route progress to CloudKit.
 
 ### 2. The Companion (Guardian)
-* Instant Invite and Access: Receives a push notification when the walker starts a journey.
-* Live Route Monitoring: Opens a map interface showing the walker's current location, the path already walked (breadcrumb trail), and the remaining destination route.
-* Automated Arrival Confirmation: Gets automatically notified when the walker reaches their destination radius, closing the active session cleanly.
+* **Instant Invite and Access**: Receives a push notification when the walker starts a journey.
+* **Live Route Monitoring**: Opens a map interface showing the walker's current location, the path already walked (breadcrumb trail), and the remaining destination route.
+* **Automated Arrival Confirmation**: Gets automatically notified when the walker reaches their destination radius, closing the active session cleanly.
 
 ---
 
 ## System Flow
 
-1. Authentication and Setup: User signs in with Apple (AuthenticationServices). Default destination (such as Home) is saved.
-2. Route Computation: When starting a walk, MapKit calculates the walking polyline, step-by-step waypoints, and estimated arrival time.
-3. Multi-Device Tracking Launch: The app starts an ActivityKit Live Activity on the Lock Screen and Dynamic Island, and syncs session state to the Apple Watch via WatchConnectivity.
-4. Background Location Streaming: CoreLocation streams continuous GPS updates via an asynchronous stream. Coordinates and status deltas are synced to CloudKit's shared database.
-5. Companion Observation: The companion opens the app or web tracking link to follow the walker's live marker and breadcrumb trail on the map.
-6. Arrival and Session End: When the walker enters the destination geofence radius, CloudKit flags the journey as completed, notifies the companion, and terminates the Live Activity.
+1. **Authentication and Setup**: User signs in with Apple (AuthenticationServices). Default destination (such as Home) is saved.
+2. **Route Computation**: When starting a walk, MapKit calculates the walking polyline, step-by-step waypoints, and estimated arrival time.
+3. **Multi-Device Tracking Launch**: The app starts an ActivityKit Live Activity on the Lock Screen and Dynamic Island, and syncs session state to the Apple Watch via WatchConnectivity.
+4. **Background Location Streaming**: CoreLocation streams continuous GPS updates via an asynchronous stream. Coordinates and status deltas are synced to CloudKit's shared database.
+5. **Companion Observation**: The companion opens the app or web tracking link to follow the walker's live marker and breadcrumb trail on the map.
+6. **Arrival and Session End**: When the walker enters the destination geofence radius, CloudKit flags the journey as completed, notifies the companion, and terminates the Live Activity.
 
 ---
 
 ## Frameworks and Apple Technologies
 
 ### 1. User Interface and Experience
-* [SwiftUI](https://developer.apple.com/xcode/swiftui/):
+* [SwiftUI](https://developer.apple.com/swiftui/):
   - Primary UI framework across iOS and watchOS screens (map overlays, bottom sheets, settings, and profile).
   - Uses state management patterns with @Binding, @ObservableState, and StoreOf<R>.
 * [UIKit](https://developer.apple.com/documentation/uikit):
@@ -136,13 +136,20 @@ Astar/
     |-- Contacts/                   # Native address book picker client
     `-- WatchConnectivity/         # watchOS cross-device session communication
 ```
+---
+## Posters
+
+| | |
+|---|---|
+|<img width="1440" height="2560" alt="TrailApp-poster" src="https://github.com/user-attachments/assets/d666aeff-f894-41f7-a6b2-72c72e1b1998" />| <img width="2560" height="1440" alt="TrailApp-poster 2" src="https://github.com/user-attachments/assets/e18622d4-7e8f-4775-b543-f3626adc2139" /> |
+
 
 ---
 
 ## Team
 
-* Awan - [LinkedIn](https://linkedin.com/in/dimas-prihady-setyawan-47a66821a/) | [GitHub](https://github.com/yaboidimsum)
-* Chusen - [LinkedIn](https://linkedin.com/in/chsnkamal/) | [GitHub](https://github.com/chusenkamal)
-* Nadia - [LinkedIn](https://linkedin.com/in/lubisnadia/) | [GitHub](https://github.com/chanandlerz)
-* Royyan - [LinkedIn](https://linkedin.com/in/mproyyan/) | [GitHub](https://github.com/mproyyan)
-* Safa - [LinkedIn](https://linkedin.com/in/safaauliya/) | [GitHub](https://github.com/chusenkamal)
+* **Awan** - [LinkedIn](https://linkedin.com/in/dimas-prihady-setyawan-47a66821a/) | [GitHub](https://github.com/yaboidimsum)
+* **Chusen** - [LinkedIn](https://linkedin.com/in/chsnkamal/) | [GitHub](https://github.com/chusenkamal)
+* **Nadia** - [LinkedIn](https://linkedin.com/in/lubisnadia/) | [GitHub](https://github.com/chanandlerz)
+* **Royyan** - [LinkedIn](https://linkedin.com/in/mproyyan/) | [GitHub](https://github.com/mproyyan)
+* **Safa** - [LinkedIn](https://linkedin.com/in/safaauliya/) | [GitHub](https://github.com/chusenkamal)
