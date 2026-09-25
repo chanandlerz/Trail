@@ -8,17 +8,16 @@ An app that makes walking journeys feel safer by keeping walkers connected with 
 
 ## Video Demo and Walkthrough
 
-<!--
-VIDEO EMBED INSTRUCTIONS:
-- For GitHub: Drag and drop your .mp4 or .mov directly into the GitHub README/Markdown web editor, and GitHub will host and render an inline video player.
-- For Notion: Type '/video', select 'Upload', or paste a YouTube / Loom / Google Drive link.
-- For Portfolio Websites: Embed via an <iframe> or <video> tag.
--->
-
-[Watch the Video Walkthrough](https://your-video-link-here.com)
-
-*(Replace this placeholder with your demo video, Loom link, or GIF preview)*
-
+| Activity | Description | Video Demo |
+| --- | --- | --- |
+| **Walker Initiates Journey** | Walker sets their destination and starts a new journey session. | https://github.com/user-attachments/assets/3656f57a-8bed-4859-9885-11214672c280 |
+| **Companion Accepts Invitation** | Companion receives a live notification and accepts the journey monitoring request. | https://github.com/user-attachments/assets/bef9d385-81cb-4fb4-8dfd-4cd454cc2f75 |
+| **Active Pedestrian Tracking** | Walker begins their route while location telemetry and breadcrumbs update continuously. | https://github.com/user-attachments/assets/9ff074c6-1026-4c40-95ca-009028c7e292 |
+| **Live Companion Monitoring** | Companion views real-time movement, traversed routes, and ETA progress on the interactive map and live activity. | https://github.com/user-attachments/assets/197ad9ff-c97f-4f76-8b4d-255798c95aa7 |
+| **Apple Watch Status Check** | Walker monitors active journey companion directly on watchOS for hands-free status updates. | https://github.com/user-attachments/assets/c77eb6b6-8c9b-4899-b089-e02d2e65ce6c |
+| **Connection & Telemetry Check** | Companion verifies connection stability and detailed walker updates during the journey. | https://github.com/user-attachments/assets/3c1696bb-92d7-4019-931f-9c61839e14d3 |
+| **Automated Arrival Detection** | App automatically identifies destination arrival, concludes the session, and triggers alerts. | https://github.com/user-attachments/assets/c26891d7-3718-49b1-9df8-244b95d79c20 |
+| **Journey Log Review** | Walker and companion access the finalized route history and session summary log. | https://github.com/user-attachments/assets/6fe92320-5419-4bf5-996b-4eee74dfde37 |
 ---
 
 ## Project Context
@@ -142,8 +141,8 @@ Astar/
 
 ## Team
 
-* [Awan] - [LinkedIn](https://linkedin.com/in/dimas-prihady-setyawan-47a66821a/) | [GitHub](https://github.com/yaboidimsum)
-* [Chusen] - [LinkedIn](https://linkedin.com/in/chsnkamal/) | [GitHub](https://github.com/chusenkamal)
-* [Nadia] - [LinkedIn](https://linkedin.com/in/lubisnadia/) | [GitHub](https://github.com/chanandlerz)
-* [Royyan] - [LinkedIn](https://linkedin.com/in/mproyyan/) | [GitHub](https://github.com/mproyyan)
-* [Safa] - [LinkedIn](https://linkedin.com/in/safaauliya/) | [GitHub](https://github.com/chusenkamal)
+* Awan - [LinkedIn](https://linkedin.com/in/dimas-prihady-setyawan-47a66821a/) | [GitHub](https://github.com/yaboidimsum)
+* Chusen - [LinkedIn](https://linkedin.com/in/chsnkamal/) | [GitHub](https://github.com/chusenkamal)
+* Nadia - [LinkedIn](https://linkedin.com/in/lubisnadia/) | [GitHub](https://github.com/chanandlerz)
+* Royyan - [LinkedIn](https://linkedin.com/in/mproyyan/) | [GitHub](https://github.com/mproyyan)
+* Safa - [LinkedIn](https://linkedin.com/in/safaauliya/) | [GitHub](https://github.com/chusenkamal)
